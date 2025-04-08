@@ -1,0 +1,26 @@
+{
+  "/login": {
+    "target": "https://localhost:7175",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/pay": {
+    "target": "https://localhost:7175",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/balance": {
+    "target": "https://localhost:7175",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/antiforgery-token": {
+    "target": "https://localhost:7175",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

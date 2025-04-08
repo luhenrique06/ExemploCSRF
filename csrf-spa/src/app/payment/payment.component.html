@@ -1,0 +1,16 @@
+<h2>Área do Cliente</h2>
+
+<p><strong>Saldo:</strong> R${{ balance }}</p>
+
+<button (click)="login()">Fazer Login</button>
+<hr />
+
+<form (submit)="pay($event)">
+  <label>Destinatário:</label><br />
+  <input [(ngModel)]="to" name="to" /><br />
+
+  <label>Valor:</label><br />
+  <input [(ngModel)]="amount" name="amount" type="number" /><br /><br />
+
+  <button type="submit">Transferir</button>
+</form>
