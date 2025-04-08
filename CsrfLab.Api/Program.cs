@@ -22,21 +22,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/login";
         options.Cookie.Name = "csrf-demo-auth";
-        options.Cookie.SameSite = SameSiteMode.None; // CORRECAO 1 - ADICIONANDO O STRICT, BLOQUEIA TUDO 
+        options.Cookie.SameSite = SameSiteMode.None;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always; 
     });
-
-//PASSO 1 - CRIAR O SERVIÇO DE ANTICSRF
-builder.Services.AddAntiforgery(options =>
-{
-    options.HeaderName = "X-CSRF-TOKEN"; // nome do header que o Angular enviará
-    options.Cookie.Name = "XSRF-TOKEN";  // nome do cookie que o Angular irá ler
-    options.Cookie.SameSite = SameSiteMode.None;
-    options.Cookie.HttpOnly = false; // ← Permite que o Angular leia
-    options.Cookie.SecurePolicy = CookieSecurePolicy.None; // ou Always com HTTPS
-});
-
-//PASSO 2 - CRIAR O METODO QUE RETORNA O TOKEN
 
 
 builder.Services.AddAuthorization();
@@ -56,24 +44,10 @@ app.Use(async (context, next) =>
 });
 
 
-//DEPOIS DO PASSO 3 E TUDO NO PROJETO DO ANGULAR
-
 app.UseCors("AllowAngularApp");
 app.UseAuthentication();
 app.UseAuthorization();
 
-// ESSE CARA AQUI! PASSO 2
-// O 3 E ATUALIZAR O /PAY
-app.MapGet("/antiforgery-token", (IAntiforgery antiforgery, HttpContext context) =>
-{
-    var tokens = antiforgery.GetAndStoreTokens(context);
-
-    // Importante: enviar o RequestToken de volta no corpo para o Angular
-    return Results.Ok(new
-    {
-        requestToken = tokens.RequestToken
-    });
-});
 
 app.MapGet("/balance", [Authorize] (HttpContext http) =>
 {
@@ -96,10 +70,8 @@ app.MapPost("/login", async (HttpContext http) =>
     return Results.Ok("Logado como Mr. Smith");
 });
 
-//PASSO 3 AQUI
 app.MapPost("/pay", [Authorize] async (HttpContext http, IAntiforgery antiforgery) =>
 {
-    await antiforgery.ValidateRequestAsync(http);
     string to;
     decimal amount;
 
