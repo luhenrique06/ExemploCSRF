@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7gwEqeMzIwE=",
+  "dgSpecHash": "YEF9W9Egd+o=",
   "success": true,
-  "projectFilePath": "/Users/luiz/Documents/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
+  "projectFilePath": "/workspaces/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

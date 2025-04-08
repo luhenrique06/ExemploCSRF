@@ -1,36 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "/Users/luiz/.nuget/packages/": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luiz/Documents/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
+      "projectUniqueName": "/workspaces/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
       "projectName": "CsrfLab.Api",
-      "projectPath": "/Users/luiz/Documents/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
-      "packagesPath": "/Users/luiz/.nuget/packages/",
-      "outputPath": "/Users/luiz/Documents/ExemploCSRF/CsrfLab.Api/obj/",
+      "projectPath": "/workspaces/ExemploCSRF/CsrfLab.Api/CsrfLab.Api.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/ExemploCSRF/CsrfLab.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/luiz/.nuget/NuGet/NuGet.Config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -43,12 +43,11 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -68,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

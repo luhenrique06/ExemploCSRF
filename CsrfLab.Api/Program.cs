@@ -31,9 +31,9 @@ builder.Services.AddAntiforgery(options =>
 {
     options.HeaderName = "X-CSRF-TOKEN"; // nome do header que o Angular enviará
     options.Cookie.Name = "XSRF-TOKEN";  // nome do cookie que o Angular irá ler
-    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SameSite = SameSiteMode.Lax;
     options.Cookie.HttpOnly = false; // ← Permite que o Angular leia
-    options.Cookie.SecurePolicy = CookieSecurePolicy.None; // ou Always com HTTPS
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // ou Always com HTTPS
 });
 
 //PASSO 2 - CRIAR O METODO QUE RETORNA O TOKEN
