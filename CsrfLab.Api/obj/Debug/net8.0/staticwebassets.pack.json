@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/ExemploCSRF/CsrfLab.Api/wwwroot/attacker/index.html",
+      "PackagePath": "staticwebassets/attacker/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.CsrfLab.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.CsrfLab.Api.props",
+      "PackagePath": "build\\CsrfLab.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CsrfLab.Api.props",
+      "PackagePath": "buildMultiTargeting\\CsrfLab.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CsrfLab.Api.props",
+      "PackagePath": "buildTransitive\\CsrfLab.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

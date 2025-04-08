@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "yh1LeaRXvZn3QqZ2IoI07A4XRk9vyUUpo9P2TZWLRiQ=",
+  "Hash": "VeBf8xq3thGp+c877UWlGrykKrHCfGwPGJHYpMmt5wU=",
   "Source": "CsrfLab.Api",
   "BasePath": "_content/CsrfLab.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "CsrfLab.Api/wwwroot",
+      "Source": "CsrfLab.Api",
+      "ContentRoot": "/workspaces/ExemploCSRF/CsrfLab.Api/wwwroot/",
+      "BasePath": "_content/CsrfLab.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/workspaces/ExemploCSRF/CsrfLab.Api/wwwroot/attacker/index.html",
+      "SourceId": "CsrfLab.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/ExemploCSRF/CsrfLab.Api/wwwroot/",
+      "BasePath": "_content/CsrfLab.Api",
+      "RelativePath": "attacker/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/attacker/index.html"
+    }
+  ]
 }

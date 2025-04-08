@@ -1,0 +1,1 @@
+{"ContentRoots":["/workspaces/ExemploCSRF/CsrfLab.Api/wwwroot/"],"Root":{"Children":{"attacker":{"Children":{"index.html":{"Children":null,"Asset":{"ContentRootIndex":0,"SubPath":"attacker/index.html"},"Patterns":null}},"Asset":null,"Patterns":null}},"Asset":null,"Patterns":[{"ContentRootIndex":0,"Pattern":"**","Depth":0}]}}

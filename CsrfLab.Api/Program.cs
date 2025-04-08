@@ -70,7 +70,7 @@ app.MapPost("/login", async (HttpContext http) =>
     return Results.Ok("Logado como Mr. Smith");
 });
 
-app.MapPost("/pay", [Authorize] async (HttpContext http, IAntiforgery antiforgery) =>
+app.MapPost("/pay", [Authorize] async (HttpContext http) =>
 {
     string to;
     decimal amount;
@@ -108,7 +108,7 @@ app.MapPost("/pay", [Authorize] async (HttpContext http, IAntiforgery antiforger
     });
 });
 
-
+app.UseStaticFiles(); 
 
 app.Run();
 

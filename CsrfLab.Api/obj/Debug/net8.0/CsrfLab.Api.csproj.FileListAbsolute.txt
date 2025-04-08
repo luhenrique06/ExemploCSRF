@@ -24,3 +24,4 @@
 /workspaces/ExemploCSRF/CsrfLab.Api/obj/Debug/net8.0/CsrfLab.Api.pdb
 /workspaces/ExemploCSRF/CsrfLab.Api/obj/Debug/net8.0/CsrfLab.Api.genruntimeconfig.cache
 /workspaces/ExemploCSRF/CsrfLab.Api/obj/Debug/net8.0/ref/CsrfLab.Api.dll
+/workspaces/ExemploCSRF/CsrfLab.Api/bin/Debug/net8.0/CsrfLab.Api.staticwebassets.runtime.json

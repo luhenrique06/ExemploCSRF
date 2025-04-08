@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsrfLab.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af294deaf2dab6e7ae7faa83993bc03fac00fff8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+265ab19a62727f42ee1e413cff7494b09c706d11")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsrfLab.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsrfLab.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
