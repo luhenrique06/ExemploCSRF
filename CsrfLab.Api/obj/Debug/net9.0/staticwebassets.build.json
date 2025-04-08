@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wRA9Ert6Xnv6fAP4V0Om2JQMbpjUDIwGaglvK4SeqXo=",
+  "Source": "CsrfLab.Api",
+  "BasePath": "_content/CsrfLab.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
